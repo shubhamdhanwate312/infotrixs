@@ -1,0 +1,5 @@
+To add a city to your favorites:" python Weather_check_app.py -add CITY_NAME"
+To remove a city from your favorites: "python Weather_check_app.py -remove CITY_NAME"
+To check the weather for a specific city: "python Weather_check_app.py CITY_NAME"
+To check the weather for your favorite city on an auto-refresh loop: "python Weather_check_app.py"
+To remove a city from your favorites: "python Weather_check_app.py -update OLD_CITY_NAME NEW_CITY_NAME "
