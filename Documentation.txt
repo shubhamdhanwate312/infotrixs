@@ -1,0 +1,59 @@
+
+### Documentation  "Employee Payroll System"
+
+- Import Libraries:
+  - `Tkinter`: For creating the graphical user interface (GUI).
+  - `messagebox`: For displaying messages and dialogs.
+  - `pymysql`: For database connectivity.
+  - `time`: For date and time handling.
+
+#### Class: EmployeeSystem
+
+- Initializes the Employee Payroll System application.
+- Provides methods for searching, adding, updating, and deleting employee records.
+
+#### Method: `search()`
+
+- Searches for an employee by Employee ID.
+- Displays employee data if found.
+- Shows an error message if not found.
+
+#### Method: `clear()`
+
+- Clears all input fields and resets the form.
+- Enables the "Save" button and disables the "Update" and "Delete" buttons.
+
+#### Method: `delete()`
+
+- Deletes an employee record based on Employee ID.
+- Asks for confirmation before deletion.
+- Displays a success message if deleted.
+
+#### Method: `add()`
+
+- Adds a new employee record to the database.
+- Validates input data and checks for duplicate IDs.
+- Writes salary receipt data to a text file.
+- Displays a success message when added.
+
+#### Method: `update()`
+
+- Updates an existing employee record in the database.
+- Validates input data and checks if the Employee ID exists.
+- Writes updated salary receipt data to a text file.
+- Displays a success message when updated.
+
+#### Method: `calculator()`
+
+- Calculates net salary based on input data (e.g., basic salary, total days, absences, etc.).
+- Updates the salary receipt text with calculated values.
+
+#### Method: `check_connection()`
+
+- Checks the database connection to ensure it's working correctly.
+
+### Main Application
+
+- Create a Tkinter root window.
+- Initialize the `EmployeeSystem` class with the root window.
+- Start the Tkinter main loop to run the application.
